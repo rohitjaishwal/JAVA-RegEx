@@ -6,8 +6,8 @@ import java.util.regex.Pattern;
 public class CharactersMatching {
 
 	public static void main(String[] args) {
-		Pattern pat = Pattern.compile("\\w+\\W\\w+\\.\\w+"); // for email id's.
-		Matcher mat = pat.matcher("qwerty@abc.com");
+		Pattern pat = Pattern.compile("\\w+\\@\\w+\\.\\w+"); // for email id's.
+		Matcher mat = pat.matcher("qwerty@email.com");
 		System.out.println(mat.matches());
 		
 		pat = Pattern.compile("\\w+\\s\\w+\\s\\w+"); // for first, middle, and last name
